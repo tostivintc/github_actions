@@ -5,6 +5,9 @@ jobs:
     name: Check tests
     runs-on: ubuntu-24.04
     steps:
+      - name: test secret key
+        run: echo "my secret is $MY_TOKEN"
+
       - name: Checkout on master
         uses: actions/checkout@v3
 

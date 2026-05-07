@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: test secret key
-        run: echo "my secret is $MY_TOKEN"
+        run: echo "my secret is ${{ secrets.MY_TOKEN }}"
 
       - name: Checkout on master
         uses: actions/checkout@v3
